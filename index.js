@@ -106,7 +106,7 @@ app.get('/setid', async (req,res) => {
     }))
 })
 
-app.listen(3954, () => {
+app.listen(process.env.PORT || 3874, () => {
     console.log('Express is ready.')
 })
 bot.login("ODYxMTIxOTY4MDU3NDgzMzA0.YOFMVA.JwZ-7b-s-IIqzpXW-eovp9h8tDM")
