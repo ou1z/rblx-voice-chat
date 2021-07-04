@@ -91,7 +91,7 @@ app.get('/setid', async (req,res) => {
         Invite: 'https://discord.gg/UaeENVmgwx'
     }))
 
-    if (users[discordid]) {
+    if (users[discordid] && users[discordid] !== robloxuser) {
         return res.send(JSON.stringify({
             Event: 'Failed.',
             Reason: 'A user already set their ID to that.'
