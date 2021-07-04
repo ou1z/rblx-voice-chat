@@ -6,6 +6,7 @@ const zones = {
     "Zone2": "861121639915847680",
     "Zone3": "861121679806693407"
 }
+const config = require('./config.json')
 
 const Key = "hello"
 
@@ -109,4 +110,4 @@ app.get('/setid', async (req,res) => {
 app.listen(process.env.PORT || 3874, () => {
     console.log('Express is ready.')
 })
-bot.login("ODYxMTIxOTY4MDU3NDgzMzA0.YOFMVA.JwZ-7b-s-IIqzpXW-eovp9h8tDM")
+bot.login(config.token)
